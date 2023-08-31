@@ -25,14 +25,15 @@
             <h1 class="text-center font-bold text-3xl">Search your phone</h1>
             <div>
                 <div class="join">
-                    <input class="input input-bordered join-item w-full" id="search-text" placeholder="Search your phone...."/>
+                    <input class="input input-bordered join-item w-full" id="search-text"
+                        placeholder="Search your phone...." />
                     <button class="btn join-item rounded-r-full" onclick="searchHandle()">Search...</button>
-                  </div>
+                </div>
             </div>
 
         </section>
         <!-- search section ends -->
-        
+
 
 
 
@@ -50,17 +51,33 @@
 
 
             <!-- show all button  -->
-            <div id="show-all-button" class="hidden mt-6 content-center" > 
+            <div id="show-all-button" onclick="handleShowAll()" class="hidden mt-6 text-center">
                 <button class="btn btn-active btn-secondary">Show All</button>
 
             </div>
-            
+
 
 
 
             <!-- show all button ends  -->
         </section>
         <!-- card section ends -->
+
+        <!-- new modal section starts  -->
+        <!-- Open the modal using ID.showModal() method -->
+        
+        <dialog id="modalFunction" class="modal modal-bottom sm:modal-middle">
+            <form method="dialog" class="modal-box">
+                <h3 class="font-bold text-lg">Hello!</h3>
+                <p class="py-4">Press ESC key or click the button below to close</p>
+                <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </div>
+            </form>
+        </dialog>
+
+        <!-- new modal section ends  -->
 
     </main>
     <footer>
